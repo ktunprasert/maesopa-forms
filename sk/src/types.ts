@@ -1,10 +1,4 @@
-type Record = {
-  id: string;
-  created: string;
-  updated: string;
-  collectionId: string;
-  collectionName: string;
-}
+import type { Record } from "pocketbase";
 
 export type Shop = {
   name: string;
