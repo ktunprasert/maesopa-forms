@@ -15,13 +15,9 @@ export const load: PageLoad = async function ({ params }) {
     throw error(404, "Not found");
   }
 
-  const json = await client.collection("products").getFullList<Product>(-1, {
-    filter: `shops.name ?= "${allowed[shop]}"`,
-  });
-
   return {
-    json,
     shop,
     thai: allowed[shop],
+    params,
   };
 };

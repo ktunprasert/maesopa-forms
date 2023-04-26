@@ -3,5 +3,5 @@
   $metadata.title = "Home";
 </script>
 
-<a href="/hello">hello</a>
-<a href="/maesopa">maesopa</a>
+<div><a href="/products">Products</a></div>
+<div><a href="/forms">Forms</a></div>

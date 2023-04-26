@@ -19,7 +19,7 @@ export type Product = {
   unit: string;
   source: string;
 
-  shops: Shop[] | string[];
-  category: Category | string;
-  templates: Template[] | string[];
+  shops: string[];
+  category: string;
+  templates: string[];
 } & Record;
