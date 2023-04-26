@@ -10,6 +10,8 @@ const config = {
   kit: {
     alias: {
       $lib: "src/lib",
+      $t: "src/types.ts",
+      $responses: "src/responses.ts",
     },
     adapter: adapter({
       // Prerendering turned off. Turn it on if you know what you're doing.
