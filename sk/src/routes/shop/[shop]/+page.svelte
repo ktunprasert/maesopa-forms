@@ -6,3 +6,5 @@
 
 <div><a href="/shop/{data.params.shop}/products">Products</a></div>
 <div><a href="/shop/{data.params.shop}/forms">Forms</a></div>
+<div><a href="/shop/{data.params.shop}/orders">Orders</a></div>
+

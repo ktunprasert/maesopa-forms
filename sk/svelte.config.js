@@ -12,6 +12,7 @@ const config = {
       $lib: "src/lib",
       $t: "src/types.ts",
       $responses: "src/responses.ts",
+      $consts: "src/consts.ts",
     },
     adapter: adapter({
       // Prerendering turned off. Turn it on if you know what you're doing.
