@@ -15,7 +15,7 @@
   $: headline = $metadata.headline ?? $metadata.title;
   // reset metadata on navigation so that the new page inherits nothing from the old page
   beforeNavigate(() => {
-    $metadata = {};
+    $metadata = { title: $metadata.title };
   });
 </script>
 
