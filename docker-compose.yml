@@ -7,7 +7,7 @@ services:
     # command: "/app/pb/pocketbase serve --http 0.0.0.0:8090 --publicDir ../sk/build"
     user: ${UID}:${GID}
     image: alpine:latest
-    entrypoint: "/app/pb/pocketbase serve --http 0.0.0.0:8090 --publicDir ../sk/build"
+    entrypoint: "/app/pb/pocketbase serve --http 0.0.0.0:8069 --publicDir ../sk/build"
     # command: "/app/pb/pocketbase serve --http 0.0.0.0:8090 --publicDir ../sk/build"
     ports:
       - 8090:8090

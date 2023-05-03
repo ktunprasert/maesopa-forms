@@ -1,7 +1,7 @@
 <script lang="ts">
   import { metadata } from "$lib/app/stores";
   export let data;
-  $metadata.title = `Shops / ${data.thai} / Products`;
+  $metadata.title = `Shops / ${data.thai} / Orders`;
 </script>
 
 <table>
@@ -20,10 +20,8 @@
         <td>{product.name}</td>
         <td>{product.unit}</td>
         <td>{product.source}</td>
-        <td>{product.expand.category?.name ?? ""}</td>
-        <td
-          >{product.expand.templates?.map(({ name }) => name).join(",") ??
-            ""}</td>
+        <td>{product.expand.category.name}</td>
+        <td>{product.expand.templates.map(x => x.name).join(",")}</td>
       </tr>
     {/each}
   </tbody>
