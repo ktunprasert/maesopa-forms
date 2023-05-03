@@ -1,16 +1,27 @@
 import type { Record } from "pocketbase";
 
+export type Expandable = {
+  expand: {
+    category?: Category;
+    shops?: Shop[];
+    templates?: Template[];
+    products?: Product[];
+  }
+};
+
+export type RecordExpandable = Record & Expandable;
+
 export type Shop = {
   name: string;
-} & Record;
+} & RecordExpandable;
 
 export type Category = {
   name: string;
-} & Record;
+} & RecordExpandable;
 
 export type Template = {
   name: string;
-} & Record;
+} & RecordExpandable;
 
 export type Product = {
   name: string;
@@ -22,4 +33,4 @@ export type Product = {
   shops: string[];
   category: string;
   templates: string[];
-} & Record;
+} & RecordExpandable;
